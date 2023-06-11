@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="Website Icon" type="png" href="Imagens/fav.png">
+  <title>Sushi Supremo</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+    body {
+      background-color: #FFDFC9;
+      color: black;
+      font-family: 'Poppins';
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1% 0%;
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      background-color: #FFDFC9;
+      z-index: 2;
+      top: 0;
+      padding-right: 10%;
+      width: 80%;
+    }
+
+    h2 {
+      width: 100%;
+      padding-left: 5%;
+      font-size: 180%;
+      text-align: center;
+      text-justify: distribute-all-lines;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      font-family: 'Poppins';
+    }
+
+    li {
+      display: inline-block;
+      margin: 10px;
+      font-size: 170%;
+      text-decoration: none;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+      transition: 0.3s all;
+      background-color: black;
+      opacity: 70%;
+    }
+
+    .Corpodosite {
+      display: flex;
+      line-height: 1px;
+      flex-direction: row;
+      margin-top: 1%;
+      align-items: center;
+    }
+
+    article {
+      padding-left: 20%;
+    }
+
+    article img {
+      width: 550px;
+      height: 350px;
+      margin-top: 12%;
+      z-index: 0;
+    }
+
+    .btn {
+      background-color: #CA652C;
+      color: white;
+      border-radius: 40px;
+      width: 50%;
+      height: 50px;
+      justify-self: unset;
+      margin-left: 20%;
+      font-size: 120%;
+    }
+
+    .logoesquerda {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .menu-container {
+      width: 100%;
+      /* Largura do menu */
+      height: 100%;
+      /* Altura do menu */
+      position: relative;
+    }
+
+    .menu-wrapper {
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .menu {
+      display: flex;
+      vertical-align: top;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      transition: transform 0.1s ease-in-out;
+    }
+
+    .item img {
+      width: 255px;
+      height: 125px;
+    }
+
+    .item img:hover {
+      transform: scale(1.20);
+      /* Aumenta em 20% o tamanho da imagem */
+    }
+
+    .description {
+      width: 100%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.767);
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      /* Alinhamento do texto centralizado */
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+
+    }
+
+    .item .description {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .item:hover .description {
+      transform: scale(1.2);
+      /* Aumenta em 20% o tamanho da descrição ao passar o mouse */
+    }
+
+    .titulomenu {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 320%;
+      line-height: 189.5%;
+      margin-left: -30%;
+      color: black;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .menu-container {
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+
+    .btn {
+      background-color: #CA652C;
+      color: white;
+      border-radius: 40px;
+      width: 50%;
+      height: 50px;
+      justify-self: unset;
+      margin-top: 2%;
+      margin-left: 25%;
+      font-size: 120%;
+    }
+
+    .contato {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 760px) {
+
+      header {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: #FFDFC9;
+        z-index: 2;
+        top: 0;
+        width: 90%;
+        margin-left: 0%;
+      }
+
+      .Corpodosite {
+        display: flex;
+        line-height: 1px;
+        flex-direction: column;
+        margin-top: 50%;
+        align-items: center;
+      }
+
+      article {
+        padding-left: 0%;
+        margin-top: 10%;
+      }
+
+      article img {
+        width: 350px;
+        height: 240px;
+
+      }
+
+      li {
+        display: inline-block;
+        margin: 10px;
+        font-size: 150%;
+      }
+
+      h1 {
+        z-index: 2;
+      }
+
+      .menu {
+        display: flex;
+        vertical-align: top;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transition: transform 0.1s ease-in-out;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="title">
+      <img src="Imagens/Logo.svg" alt="logo Sushi">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Ínicio</a></li>
+        <li><a href="#Popular">Popular</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="Ínicio" class="Corpodosite">
+      <aside class="logoesquerda">
+        <h2><strong>Experimente você Também!</strong></h2>
+        <img class="imgsushi" src="Imagens/sushi2.png" alt="Sushi" width="385" height="105">
+        <button class="btn"
+          onclick="window.location.href='https://api.whatsapp.com/send?phone=5581992091467&text=Ol%C3%A1%2C%20gostei%20dos%20seus%20projetos.%20Gostaria%20de%20te%20chamar%20para%20uma%20vaga%20de%20est%C3%A1gio.'">Faça
+          Seu Pedido</button>
+      </aside>
+
+      <article>
+        <img src="Imagens/barcadesushi2.png" alt="barcadesushi">
+      </article>
+    </section>
+
+    <section id="Popular">
+      <div class="menu-container">
+        <div class="menu-wrapper">
+          <h2 class="titulomenu"><strong>Popular</strong></h2>
+          </br>
+          <div class="menu">
+            <div class="item">
+              <img src="Imagens/yakisoba.png" alt="Item 1">
+              <div class="description">Yakisoba Completo</div>
+            </div>
+            <div class="item">
+              <img src="Imagens/temakisalmaoflambado.png" alt="Item 2">
+              <div class="description">Temaki Salmão flambado</div>
+            </div>
+            <div class="item">
+              <img src="Imagens/Joyflambado.png" alt="Item 3">
+              <div class="description">Joy Camarão flambado</div>
+            </div>
+            <div class="item">
+              <img src="Imagens/temakifrito.png" alt="Item 4">
+              <div class="description">Temaki Salmão Frito</div>
+            </div>
+          </div>
+        </div>
+        <button class="btn"
+          onclick="window.location.href='https://api.whatsapp.com/send?phone=5581992091467&text=Ol%C3%A1%2C%20gostei%20dos%20seus%20projetos.%20Gostaria%20de%20te%20chamar%20para%20uma%20vaga%20de%20est%C3%A1gio.'">Faça
+          Seu Pedido</button>
+    </section>
+
+    <section id="contato" class="contato">
+      <div class="contact-icons">
+        <div class="contact-icon">
+          <i class="fab fa-whatsapp"></i>
+          <span><a
+              href="https://api.whatsapp.com/send?phone=5581992091467&text=Ol%C3%A1%2C%20gostei%20dos%20seus%20projetos.%20Gostaria%20de%20te%20chamar%20para%20uma%20vaga%20de%20est%C3%A1gio.">WhatsApp</a></span>
+        </div>
+        <div class="contact-icon">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </div>
+        <div class="contact-icon">
+          <i class="far fa-envelope"></i>
+          <span>E-mail</span>
+        </div>
+      </div>
+      <h2>Obrigado por nos visitar! </h2>
+    </section>
+
+  </main>
+</body>
+
+</html>
